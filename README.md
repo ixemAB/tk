@@ -1,2 +1,2 @@
 # ixemAB
-ixem
+/butun muelif haqlari qorunur
