@@ -1,0 +1,27 @@
+@hintImg: ;
+@bgImg: ;
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: @bgImg;
+  background-position: center top;
+
+  .slides, & > .dg {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    background-image: @hintImg;
+    background-repeat: no-repeat;
+    
+    & > .dg {
+      display: block;
+    }
+  }
+}
