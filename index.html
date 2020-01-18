@@ -1088,6 +1088,29 @@
     <script type="text/javascript" src="js/main.js"></script>
 
 </body>
+<!-- WhatsHelp.io widget -->
+<script type="text/javascript">
+    (function () {
+        var options = {
+            facebook: "100008587233090", // Facebook page ID
+            whatsapp: "+994703555565", // WhatsApp number
+            telegram: "+994703555565", // Telegram bot username
+            email: "ixemab@live.ru", // Email
+            sms: "+994703555565", // Sms phone number
+            company_logo_url: "//temirtikinti.tk/images/logos/ixemAB.jpg", // URL of company logo (png, jpg, gif)
+            greeting_message: "Hello! Send us a message through any of the instant messengers.", // Text of greeting message
+            call_to_action: "Write to us", // Call to action
+            button_color: "#333333", // Color of button
+            position: "left", // Position may be 'right' or 'left'
+            order: "facebook,whatsapp,telegram,sms,email", // Order of buttons
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /WhatsHelp.io widget -->
 
 </html>
 
