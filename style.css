@@ -11,9 +11,9 @@
 
 #azerbaijan-map {
     
-  width: 100%; /* Изменено на auto */
+  width: 100%; /*  auto */
     
-  height: 100vh; /* Изменено на auto */
+  height: 100vh; /*  auto */
 
  
 }
@@ -35,42 +35,9 @@
   border: transparent;;
   padding: 50px;
   display: none;
-  width: 200px; /* Задаем ширину */
+  width: 200px; /*  */
     
-  height: 400px; /* Задаем высоту */
-  top: 10px;
-    
-  right: 10px;
-    
-  z-index: 10;
-}
-
-#info-box h3 {
-    
-  font-size: 1.2em;
-    
-  margin-bottom: 5px;
-}
-
-
-
-#info-box p {
-    
-  font-size: 1em;
-    
-  line-height: 1.5;
-}
-
-#info-box h3 {
-    
-  font-size: 
-  clamp(16px, 2vw, 32px);
+  height: 400px; /*  */
 
 }
 
-
-#info-box p {
-    
-  font-size: clamp(12px, 1vw, 24px);
-
-}
