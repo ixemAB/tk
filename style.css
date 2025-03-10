@@ -1,0 +1,76 @@
+#map-container {
+    width: 100%;
+    
+    height: 100vh;
+    position: absolute;
+    background-image: url('https://mediaim.expedia.com/destination/1/0ecc8f40cf6a0135708aa4743d5ff8e4.jpg');     
+    background-size: cover;
+    
+    background-repeat: round;  
+}
+
+#azerbaijan-map {
+    
+  width: 100%; /* Изменено на auto */
+    
+  height: 100vh; /* Изменено на auto */
+
+ 
+}
+
+.state {
+  fill: rgba(0, 239, 255, 0.17);
+  stroke: rgba(234, 255, 0, 0.31);
+  stroke-width: 1;
+  cursor: pointer;
+}
+
+.state:hover {
+  fill: #caff70;
+}
+
+#info-box {
+  position: absolute;
+  background-color: transparent;
+  border: transparent;;
+  padding: 50px;
+  display: none;
+  width: 200px; /* Задаем ширину */
+    
+  height: 400px; /* Задаем высоту */
+  top: 10px;
+    
+  right: 10px;
+    
+  z-index: 10;
+}
+
+#info-box h3 {
+    
+  font-size: 1.2em;
+    
+  margin-bottom: 5px;
+}
+
+
+
+#info-box p {
+    
+  font-size: 1em;
+    
+  line-height: 1.5;
+}
+
+#info-box h3 {
+    
+  font-size: 
+  clamp(16px, 2vw, 32px);
+
+}
+
+
+#info-box p {
+    
+  font-size: clamp(12px, 1vw, 24px);
+
+}
