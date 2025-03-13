@@ -1,43 +1,70 @@
 #map-container {
+    width: auto;
+    height: auto;
+    position: relative;
+}
+
+#map-container svg {
     width: 100%;
-    
-    height: 100vh;
-    position: absolute;
-    background-image: url('https://mediaim.expedia.com/destination/1/0ecc8f40cf6a0135708aa4743d5ff8e4.jpg');     
-    background-size: cover;
-    
-    background-repeat: round;  
+    height: 100%;
 }
 
-#azerbaijan-map {
-    
-  width: 100%; /*  auto */
-    
-  height: 100vh; /*  auto */
-
- 
+.region {
+    fill: #0fe2f5;
+    stroke: black;
+    stroke-width: 0.5;
 }
 
-.state {
-  fill: rgba(0, 239, 255, 0.17);
-  stroke: rgba(234, 255, 0, 0.31);
-  stroke-width: 1;
-  cursor: pointer;
-}
-
-.state:hover {
-  fill: #caff70;
+.region:hover {
+    fill: #74f70f;
+    cursor: pointer;
 }
 
 #info-box {
-  position: absolute;
-  background-color: transparent;
-  border: transparent;;
-  padding: 50px;
-  display: none;
-  width: 200px; /*  */
-    
-  height: 400px; /*  */
-
+    position: absolute;
+    background-color: #51f5f2;
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    display: none;
+}
+/* Стили для контейнера */
+.container {
+    width: 90%; /* Ширина контейнера (можно изменить) */
+    max-width: 1200px; /* Максимальная ширина контейнера (можно изменить) */
+    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+    padding: 20px; /* Отступы внутри контейнера (можно изменить) */
 }
 
+/* Адаптивные заголовки */
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.7em; }
+h5 { font-size: 1.4em; }
+h6 { font-size: 1.1em; }
+
+@media (max-width: 1024px) {
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.7em; }
+    h4 { font-size: 1.4em; }
+    h5 { font-size: 1.2em; }
+    h6 { font-size: 1em; }
+}
+
+@media (max-width: 767px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.7em; }
+    h3 { font-size: 1.4em; }
+    h4 { font-size: 1.2em; }
+    h5 { font-size: 1em; }
+    h6 { font-size: 0.9em; }
+}
+
+/* Остальные стили для карты и таблицы */
