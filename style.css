@@ -27,15 +27,14 @@
     padding: 10px;
     display: none;
 }
-/* Стили для контейнера */
+
 .container {
-    width: 90%; /* Ширина контейнера (можно изменить) */
-    max-width: 1200px; /* Максимальная ширина контейнера (можно изменить) */
-    margin: 0 auto; /* Центрирование контейнера по горизонтали */
-    padding: 20px; /* Отступы внутри контейнера (можно изменить) */
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-/* Адаптивные заголовки */
 h1, h2, h3, h4, h5, h6 {
     font-family: sans-serif;
     text-align: center;
@@ -67,4 +66,41 @@ h6 { font-size: 1.1em; }
     h6 { font-size: 0.9em; }
 }
 
-/* Остальные стили для карты и таблицы */
+#region-list {
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-left: 20px;
+}
+
+#regions-ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+#regions-ul li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#regions-ul li.highlight {
+    background-color: #ffff99;
+}
+
+@media (max-width: 524px) {
+    #region-list {
+        width: 30%;
+    }
+}
+
+@media (max-width: 500px) {
+    #region-list {
+        width: 100%;
+        margin-left: 0;
+    }
+    #map-container {
+        width: 100%;
+    }
+}
